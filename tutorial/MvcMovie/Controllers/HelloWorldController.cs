@@ -10,11 +10,10 @@ namespace MvcMovie.Controllers {
             return View();
         }
         //Get
-        public string Welcome(string name, int numTimes = 1) {
+        public IActionResult Welcome(string name, int numTimes = 1) {
             ViewData["Message"] = $"Hello {name}";
-            ViewData["NumTimes"] = {ID};
-
-
+            ViewData["NumTimes"] = numTimes;
+            return View();
         }
 
             
