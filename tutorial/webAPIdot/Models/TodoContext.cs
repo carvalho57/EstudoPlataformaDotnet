@@ -7,6 +7,6 @@ namespace webAPIdot.Models {
 
         }
 
-        public DbSet<TodoItem> TodoItems {get;set;}
+        public DbSet<TodoItemDTO> TodoItems {get;set;}
     }
 }
