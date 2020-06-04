@@ -29,5 +29,10 @@ namespace MvcMovie.Models {
         [StringLength(5)]
         [Required]
         public string Rating { get; set; }
+
+        [Required]
+        [RegularExpression(@"^[0-9-]+$")]
+        [StringLength(17)]
+        public string ISBN {get;set;}
     }
 }
