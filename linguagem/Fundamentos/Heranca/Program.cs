@@ -17,6 +17,9 @@ namespace Heranca
     {
         static void Main(string[] args)
         {
+            // UsingAnimal();
+            // ImplementandoInterface();
+            //Exercicio1();
             Exercicio2();
         }
 

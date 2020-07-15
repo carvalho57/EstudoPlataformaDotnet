@@ -34,8 +34,7 @@ namespace Collection.Content {
             contas.Add(new Conta(7154));
             contas.Add(new Conta(2122));
             contas.Add(new Conta(2123));
-            contas.Add(new Conta(2123));
-            contas.Add(new Conta(2123));
+            contas.Add(new Conta(2125));
 
             foreach(var conta in contas) {
                 Console.WriteLine(conta);

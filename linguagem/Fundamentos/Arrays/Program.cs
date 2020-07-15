@@ -1,5 +1,4 @@
 ﻿using System;
-using Arrays.Exercicicios;
 
 namespace Arrays
 {
@@ -7,7 +6,9 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-          //OrdenandoProva();    
+        //ClasseArray();
+        //OrdenandoElementos();
+          OrdenandoProva();    
         }
 
         static void InicializandoArray() {
@@ -21,9 +22,9 @@ namespace Arrays
         static void ClasseArray() {
             Array array = Array.CreateInstance(typeof(int),2,3);
 
-            Console.WriteLine("Quantidade de Linhas  ",array.GetLength(0));
-            Console.WriteLine("Quantidade de Colunas  ",array.GetLength(1));
-            Console.WriteLine("Numeros de Dimensões",array.Rank);
+            Console.WriteLine($"Quantidade de Linhas  {array.GetLength(0)}");
+            Console.WriteLine($"Quantidade de Colunas {array.GetLength(1)}");
+            Console.WriteLine($"Numeros de Dimensões  {array.Rank}");
         }
         /*A ordenação só pode ser feita se o criterio de ordenação for especificado
         Ou seja, se quiser ordenar tem que utilizar a interface IComparable para 

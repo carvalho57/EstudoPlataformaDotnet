@@ -1,4 +1,7 @@
 ﻿using System;
+using review.Collections;
+using review.Polimorfismo;
+using review.Generic;
 
 namespace review
 {
@@ -19,7 +22,7 @@ namespace review
         }
 
         static void Generics() {
-            Generics.Run();
+            new Generics().Run();
         }
     }
 }

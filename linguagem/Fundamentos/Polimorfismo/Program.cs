@@ -1,6 +1,5 @@
 ﻿using System;
 using Polimorfismo.Concepts;
-using Polimorfismo.Exercicio;
 
 namespace Polimorfismo
 {
@@ -18,7 +17,8 @@ namespace Polimorfismo
             uma implementação do método na superclass
 
 
-        Polymorphism means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
+        Polymorphism means that you can have multiple classes that can be used interchangeably,
+        even though each class implements the same properties or methods in different ways.
         */
     class Program
     {

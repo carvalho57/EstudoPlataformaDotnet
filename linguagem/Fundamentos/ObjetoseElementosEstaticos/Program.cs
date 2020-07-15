@@ -6,14 +6,14 @@ namespace ObjetoseElementosEstaticos
     {
         static void Main(string[] args)
         {
-    
-            Bola b1 = new Bola();
-            Bola b2 = new Bola();
-            Bola b3 = new Bola();
+            Bola bola = null;
+            for(int count = 0; count < 10; count++) {
+                bola = new Bola();
+            }
 
-            b3.PrintNumberOfBolas();
+            bola.PrintNumberOfBolas();
             
-            //Salario.Run();
+            // Salario.Run();
             //  Console.WriteLine($"PI: {Matematica.PI}");   
             //  Matematica matematica = new Matematica();
             //  Console.WriteLine($"Euler: {matematica.E}");
@@ -29,8 +29,6 @@ namespace ObjetoseElementosEstaticos
             public Matematica() {
                 E = 2.7871828;
             }
-
-
         }
     }
 }

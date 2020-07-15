@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace review.Generics {
+namespace review.Generic {
     /* O generic permite utilizar com se fosse placeholder para os tipos, então você
     define um T por exemplo e quando for instanciar uma classe você passa o tipo e onde tiver
     T vai ser substituido pelo tipo passado por parametro
@@ -12,7 +12,7 @@ namespace review.Generics {
         Permite restringir o tipo passado como parametro
     */
     public class Generics {
-        public static void Run() {
+        public void Run() {
             var items = new Items<string>();
             items.Add("borracha");
             items.Add("lápis");
@@ -22,21 +22,20 @@ namespace review.Generics {
         }
     }
     
-
-    public class Items<T> where T: new() {   
+    public class Items<T> where T: class {   
 
         public ICollection<T> CollectionItems {get;set;}
 
-        public Item() {
+        public Items() {
             CollectionItems = new List<T>();
         }
 
         public void Add(T item) {
-            Items.Add(item);
+            CollectionItems.Add(item);
         }
 
         public void Remove(T item) {
-            Items.Remove(item);
+            CollectionItems.Remove(item);
         }
 
         public void ForEach(Action<T> function) {

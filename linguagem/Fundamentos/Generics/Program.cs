@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Generics.Exercicios;
 namespace Generics
 {
