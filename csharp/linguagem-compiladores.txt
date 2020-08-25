@@ -1,0 +1,59 @@
+O que é uma linguagem de programação?
+
+É a linguagem em que escrevemos instruções para o computador, mas o computador não entende essa linguagem, então ela passa para um processo de tradução(compilação) onde sai dessa LP e é transformado em 0 e 1.
+
+
+Compilação ou intrepretação
+
+Compilação com já dito e converter o código plain text escrito em alguma linguagem e convertido para código de máquina 
+Exemplo de lingaguem que sofrem esse processo: Java e C#
+
+Interpretação utilizar como exemplo o Javascript, acho que o python também, é quando a "compilação" é feita em tempo de execução. Vou tentar explicar melhor. Quando o código é compilado é gerado um código objeto(binario) que é posto na memória e executado, quando o código é interpretado no momento que ele é executado que as intruções são lidas e executadas 
+
+
+tempo de execução (É o que acontece durante a execução do código pelo computador ou intrepretador).
+
+
+GUERRA Compilado X Interpretado  traid-off(Pos e contras)
+
+Interpretada
+Prós
+- Não precisa ser compilada (correções mais faceis, deu um bug corrige e cola as modificações)
+- Mais simples de serem distribuidas
+Contra
+- Detecção de erros
+	- Somente em tempo de execução
+- Tamanho final da aplicação maior (plain text)
+- Menor otimização da execução (chrome otimiza, mas linguagens compiladas otimizam melhor)
+- Múltiplos arquivos
+
+Compilada
+Prós
+- Tempo de compilação
+	- Detecção mais rápida de erros
+- Tamanho menor das aplicações (arquivo mais compacto dll ou exe)
+- Maior otimização da execução
+- Apenas um arquivo final
+Contra
+- Precisa de um compilador
+- Pode ser mais burocrática
+	- SE tiver com bug (tem que corrigir, compilar, gerar uma nova versão e distribuir isso para os clientes)
+
+
+Tipagem de dados
+
+Tipo de dado
+- define o formato do dado,onde definimos por exemplo que aquela informação é um número, uma letra, uma cadeia de caracteres e assimpor diante. 
+- Definir tipos é padronizar os dados.
+
+- Fortemente tipada(java) e fracamente tipada(javascript)
+- Menor liberdade (javascript tudo é var , posso receber e passar qualquer coisa por parametro 1 == '1')
+- Maior otimização, pois já  se tem conhecimento de quandos bytes
+alocar para cada tipo.
+
+
+Definição
+- Tipadas ou não tipadas
+- Compiladas e Interpretadas
+- Alto e Baixo nível
+- Compiladores e Interpretadores
