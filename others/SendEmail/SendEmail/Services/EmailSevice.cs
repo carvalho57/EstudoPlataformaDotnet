@@ -6,7 +6,6 @@ namespace SendEmail
 {
     public class EmailService
     {
-
         private readonly SmtpClient _smtpClient;
         public EmailService(Smtp config)
         {
@@ -17,7 +16,6 @@ namespace SendEmail
                 EnableSsl = true,                
             };
         }
-
         public MailMessage CreateMailMessage(string from, string to, string subject, string body)
         {
             var mailMessage = new MailMessage()

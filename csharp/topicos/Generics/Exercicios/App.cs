@@ -2,6 +2,7 @@ using System;
 
 namespace Generics.Exercicios {
     public class App {
+        
         public void Run() {
             Exercicio1();
             Exercicio2();
