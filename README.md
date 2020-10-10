@@ -7,9 +7,9 @@ Linguagem C#
 - [X] Polimorfismo, Herança e Encapsulamento
 - [X] Arrays
 - [X] Collections
-    - [ ] IEquatable
-    - [ ] IComparable
-    - [ ] IComparer
+    - [X] IEquatable
+    - [X] IComparable
+    - [X] IComparer
 - [ ] Generics
 - [ ] Delegates
 - [ ] Casting, Como criar os proprios operadores

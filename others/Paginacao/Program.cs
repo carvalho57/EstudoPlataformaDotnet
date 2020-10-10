@@ -9,23 +9,36 @@ namespace PaginacaoExemplo
         static void Main(string[] args)
         {
             var names = GetList();
-            
-            PresentLine(names);
-            var pageLength = 4;
-            var pageNumber = 3;            
+            char opcao;
+            bool sair = false;;
 
-            Console.WriteLine("------------------\n");
-            Console.WriteLine("Page 3");
-            Present(names.Skip((pageNumber - 1) * pageLength).Take(pageLength).ToList());
+            Console.Write("Informe o tamanho das paginas: ");
+            int pageLength = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("------------------\n");
-            Console.WriteLine("Page 3");
-            var paginacao = new Paginacao<string>(names,4);
-            var pagesix = paginacao.GetPage(pageNumber);
-            foreach(var item in pagesix) {
-                Console.WriteLine($"{item}");
-            }
+            var paginacao = new Paginacao<string>(names,pageLength);
+            do {
+                Console.WriteLine("j - para esquerda");
+                Console.WriteLine("k - para direita");
+                Console.WriteLine("l - para sair");
+                Console.Write("Informe a opção: ");
+                opcao = Console.ReadLine()[0];  
 
+                switch(opcao) {
+                    case 'j':
+                        paginacao.PreviousPage().PresentPage();
+                        break;
+                    case 'k':
+                        paginacao.NextPage().PresentPage();
+                        break;
+                    case 'l':
+                        sair = true;
+                        break;                    
+                }
+
+                Console.Write("Pressione Qualquer tecla para continuar");
+                Console.ReadKey();
+
+            }while(!sair);
         }
         public static List<string> GetList() {
             List<string> names = new List<string>(){"amanda", "diego","carlos","diogo","manu","bruno","gabriel","mayara","marcos","jonatas","patricia"
@@ -33,7 +46,6 @@ namespace PaginacaoExemplo
             names.Sort();
             return names;
         }
-        static void Present(List<string> names) => names.ForEach(name => Console.WriteLine(name));
-        static void PresentLine(List<string> names) => names.ForEach(name => Console.Write($"{name} "));
+        
     }
 }
