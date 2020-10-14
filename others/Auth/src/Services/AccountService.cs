@@ -20,7 +20,7 @@ namespace ApiAuth.Services
             if (user == null || !Hash.Compare(model.Password, user.Password))
                 return new AccountResult(false, "E-mail ou senha inválidos");
 
-            var token =  _tokenService.GenerateToken(user.Email);
+            var token =  _tokenService.GenerateToken(user);
             return new AccountResult(true, new {token = token});
         }
         public AccountResult CreateUser(UserModel model)

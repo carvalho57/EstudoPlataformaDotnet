@@ -3,6 +3,7 @@ using System.Text;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using ApiAuth.Models;
 
 namespace ApiAuth.Services
 {
@@ -17,18 +18,19 @@ namespace ApiAuth.Services
             _expDate = AuthSettings.ExpireDate;
         }
 
-        public string GenerateToken(string email)
+        public string GenerateToken(UserModel user)
         {
-            var tokenHandler = new JwtSecurityTokenHandler();
+            
             var key = Encoding.ASCII.GetBytes(_secret);
             var tokenDescription = new SecurityTokenDescriptor() {
                 Subject = new ClaimsIdentity(new[]{
-                    new Claim(ClaimTypes.Email, email)
+                    new Claim(ClaimTypes.Email, user.Email),
+                    new Claim(ClaimTypes.Role, user.Role)
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(double.Parse(_expDate)),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
-
+            var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescription);
             return tokenHandler.WriteToken(token);
         }
