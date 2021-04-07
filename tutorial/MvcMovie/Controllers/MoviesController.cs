@@ -125,7 +125,7 @@ namespace MvcMovie.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(movie);
+            return View(movie); 
         }
 
         // GET: Movies/Delete/5

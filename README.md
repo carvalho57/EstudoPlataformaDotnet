@@ -10,18 +10,23 @@ Linguagem C#
     - [X] IEquatable
     - [X] IComparable
     - [X] IComparer
-- [ ] Generics
-- [ ] Delegates
-- [ ] Casting, Como criar os proprios operadores
+- [X] Generics
+- [X] Delegates
 - [ ] Metodos Anonimos 
-- [ ] Reflection
 - [ ] LINQ 
+- [ ] Casting, Como criar os proprios operadores
+- [ ] Reflection
 - [ ] Assembly
 - [ ] ADO.NET
     - [ ] Processamento por Demanda
     - [ ] Processamento em lote
 - [ ] Performance na plataforma .dotnet
 - [ ] Programação Assíncrona
-- [ ] Entity Framework
+- [ ] Entity Framework Core
 - [ ] Serialização
 - [ ] Programação em Rede
+
+
+Code-peaces - Implementações de pedaços de codigos
+Cshap - Coisas da linguagens
+aspnetcore - Coisas da plataforma aspnet

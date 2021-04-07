@@ -27,8 +27,9 @@ namespace MvcMovie
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<MvcMovieContext>(options => 
-                options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
+            services.AddDbContext<MvcMovieContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext"));                
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,7 +53,7 @@ namespace MvcMovie
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
-            {
+            {                
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

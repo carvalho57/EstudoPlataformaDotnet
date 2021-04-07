@@ -1,0 +1,35 @@
+Proximos passos na linguagem?
+
+Atualmente eu vi conceitos básicos da linguagem, então o 
+proximo passo seria me aprofundar nesses conceitos
+
+Sequencia (não precisa ser estrito)
+    * plataforma
+    * ASPNET CORE and Advanced C#
+
+Ver coisas sobre a plataforma
+    [ ] Arquitetura dos componentes (CLR,IL, BCL,AOT)
+    [ ] Execution Model(Memory, Execution)
+    [ ] Fundamental coding components
+
+ASP.NET Core
+    [ ] Fundamentos
+    [ ] Web Aps
+        [ ] MVC        
+    [ ] Test, debug and troubleshoot
+    [ ] Data Acess (EF Core)
+    [ ] Security and Identity
+    [ ] Host and deploy
+    [ ] Performance
+
+Language Advanced C#
+    [ ] Generics
+    [ ] Serialização    
+    [ ] Events
+    [ ] Refletions
+    [ ] Threading
+        [ ] Métodos assíncronos
+    [ ] Collections and IEnumerable
+    [ ] Expression Trees
+    
+    

@@ -27,7 +27,7 @@ namespace MvcMovie.Models {
                         Genre = "Romantic Comedy",
                         Price = 7.99M,
                         Rating = "G",
-                        ISBN = " 978-3-16-148410-0"
+                        ISBN = "978-3-16-148410-0"
                         
                     },
 
@@ -38,7 +38,7 @@ namespace MvcMovie.Models {
                         Genre = "Comedy",
                         Price = 8.99M,
                         Rating = "PG",
-                        ISBN = " 978-3-16-148410-0"
+                        ISBN = "978-3-16-148410-0"
                     },
 
                     new Movie
@@ -48,7 +48,7 @@ namespace MvcMovie.Models {
                         Genre = "Comedy",
                         Price = 9.99M,
                         Rating = "R",
-                        ISBN = " 978-3-16-148410-0"
+                        ISBN = "978-3-16-148410-0"
                     },
 
                     new Movie
@@ -58,7 +58,7 @@ namespace MvcMovie.Models {
                         Genre = "Western",
                         Price = 3.99M,
                         Rating = "R",
-                        ISBN = " 978-3-16-148410-0"
+                        ISBN = "978-3-16-148410-0"
                     }
                 );
                 context.SaveChanges();

@@ -1,0 +1,8 @@
+3/23/2021 3:14:12 PM	Critical	LoggerSample	Falha critica, chamar os bombeiros no log
+3/23/2021 3:14:12 PM	Critical	LoggerSample	Falha critica, chamar os bombeiros no campos log console e no file console!
+3/23/2021 3:26:43 PM	Critical	LoggerSample	Falha critica, chamar os bombeiros no log
+3/23/2021 3:26:43 PM	Critical	LoggerSample	Falha critica, chamar os bombeiros no campos log console e no file console!
+4/5/2021 7:37:12 PM	Critical	LoggerSample	Falha critica, chamar os bombeiros no log
+4/5/2021 7:37:27 PM	Critical	LoggerSample	Falha critica, chamar os bombeiros no campos log console e no file console!
+4/5/2021 7:42:41 PM	Critical	LoggerSample	Falha critica, chamar os bombeiros no log
+4/5/2021 7:43:39 PM	Critical	LoggerSample	Falha critica, chamar os bombeiros no campos log console e no file console!
