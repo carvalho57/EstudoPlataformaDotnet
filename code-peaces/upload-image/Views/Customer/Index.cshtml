@@ -1,0 +1,30 @@
+@model IEnumerable<CustomerViewModel>
+@{
+    ViewData["Title"] = "Customers";
+}
+<a asp-action="Create">Adicionar Cliente</a>
+<table class="table">  
+    <thead>  
+        <tr>  
+            <th>@Html.DisplayNameFor(model => model.FullName)</th>  
+            <th>@Html.DisplayNameFor(model => model.Gender)</th>  
+            <th>@Html.DisplayNameFor(model => model.BirthDate)</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        @foreach (var customer in Model)  
+        {  
+            <tr>  
+                <td>  
+                    <img src="~/images/@customer.FileName"   
+                         class="rounded-circle"   
+                         height="40" width="40"   
+                         asp-append-version="true" />  
+                    @customer.FullName  
+                </td>  
+                <td>@customer.Gender</td>  
+                <td>@customer.BirthDate</td>  
+            </tr>  
+        }  
+    </tbody>  
+</table>   
