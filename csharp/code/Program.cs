@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using code.Delegates;
 using code.Events;
+using code.Threadings;
 
 namespace code
 {
@@ -13,16 +14,30 @@ namespace code
             // IndexDataSample.Run();
             // GenericListSample.Run();
             // IteratorSample.Run();
-            // DelegateSample.Run();
-            // LoggerSample.Run();
-            // FuncSample.Run();
-            // LoggerSample.Run();
-            // FileSearcherSample.Run();
-            // DisplayProgressSample.Run();
-            // LinqPark.LinqSample.Run();
-            // LinqPark.LinqJoinSample.Run();
-            // Lambda.LambdaSample.Run();
+            //# Delegates
+            //// DelegateSample.Run();
+            //// LoggerSample.Run();
+            //// FuncSample.Run();
+            //// LoggerSample.Run();
+            // #Events
+            //// FileSearcherSample.Run();
+            //// DisplayProgressSample.Run();
+            // #LINQ PARK
+            //// LinqPark.LinqSample.Run();
+            //// LinqPark.LinqJoinSample.Run();
+            //// Lambda.LambdaSample.Run();
             // ExpressionTree.ExpressionTreeSample.Run();
+            //# Threading
+            //// MultiThreadingSample.Run();
+            //// LockCounter.Run();
+            //// MutexSample.Run();
+            //  SemaphoreSample.Run();
+            //// TimerSample.Run();
+            //// CanguruRaceSample.Run();
+            // AutoEManualResetEventSample.Run();
+            // ProduceConsumerSample.Run();            
+            // InsertingInAListSample.Run();
+            // QueueTaskSample.Run();
         }
     }
 }
